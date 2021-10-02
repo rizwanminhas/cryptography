@@ -1,8 +1,11 @@
 const crypto = require('crypto')
 
-// protect data but not identity
 function decryptWithPrivateKey(privateKey, encryptedMessage) {
     return crypto.privateDecrypt(privateKey, encryptedMessage)
 }
 
-module.exports = { decryptWithPrivateKey }
+function decryptWithPublicKey(publicKey, encryptedMessage) {
+    return crypto.publicDecrypt(publicKey, encryptedMessage)
+}
+
+module.exports = { decryptWithPrivateKey, decryptWithPublicKey }

@@ -6,4 +6,10 @@ function encryptWithPublicKey(publicKey, message) {
     return crypto.publicEncrypt(publicKey, bufferMessage)
 }
 
-module.exports = { encryptWithPublicKey }
+// for data signature
+function encryptWithPrivateKey(privateKey, message) {
+    const bufferMessage = Buffer.from(message, 'utf8')
+    return crypto.privateEncrypt(privateKey, bufferMessage)
+}
+
+module.exports = { encryptWithPublicKey, encryptWithPrivateKey }
