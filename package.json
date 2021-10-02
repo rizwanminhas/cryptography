@@ -1,0 +1,23 @@
+{
+  "name": "cryptography",
+  "version": "1.0.0",
+  "description": "To generate a public and private key run the `createKeypair.js`, it will generate `id_rsa_public.pem` and `id_rsa_private.pem` in the same folder.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizwanminhas/cryptography.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizwanminhas/cryptography/issues"
+  },
+  "homepage": "https://github.com/rizwanminhas/cryptography#readme",
+  "dependencies": {
+    "base64url": "^3.0.1"
+  }
+}
